@@ -1,3 +1,30 @@
+2i Coding challenge made as React app:
+
+In a language of your choice could you please provide code that iterates in multiples of 7 up until 100, then in multiples of 8 up to 200, then multiples of 9 up to 300.
+
+------------------------------------------------------------
+
+Alternative code only solution:
+
+const numberIteration = (num, interval, count, limit) => {
+    if (count < interval) {
+        count += num;
+        console.log(count)
+        numberIteration(num, interval, count, limit)
+    } else if (count >= interval && count < limit) {
+        interval += 100
+        num += 1
+        count += num;
+        console.log(count)
+        numberIteration(num, interval, count, limit)
+    } else {return count}
+}
+
+numberIteration(7, 100, 0, 300)
+
+
+--------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
