@@ -5,7 +5,7 @@ In a language of your choice could you please provide code that iterates in mult
 ------------------------------------------------------------
 
 Alternative code only solution:
-
+```
 const numberIteration = (num, interval, count, limit) => {
     if (count < interval) {
         count += num;
@@ -22,7 +22,7 @@ const numberIteration = (num, interval, count, limit) => {
 
 numberIteration(7, 100, 0, 300)
 
-
+```
 --------------------------------------------------------------
 
 # Getting Started with Create React App
